@@ -5,7 +5,31 @@
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
+
+//-----------------------------------------------------------//
+//Solution1
+
 function findSumOfTarget (arr,num) {
+    let indices_array=[]
+    let target=num
+    let filtered_array=arr.filter(item => arr.includes(target-item))
+    for( let item of filtered_array) {
+        indices_array.push(arr.indexOf(item))
+
+    }
+
+    return [...new Set(indices_array)]
+} 
+
+console.log(findSumOfTarget([2,7,11,15],9))
+
+
+
+
+//-----------------------------------------------------------//
+//Solution2
+
+function findSumOfTarget2 (arr,num) {
 
     let target=num
     let new_arr=[]
@@ -16,12 +40,11 @@ function findSumOfTarget (arr,num) {
             if(target-arr[i]==arr[j]) {
 
                 new_arr.push(i)
-                break
+                break  
             }
         }
     }
     return new_arr
 }
 
-x= findSumOfTarget([7,0,5,6,6],12)
-console.log(x)
+console.log(findSumOfTarget2([2,7,11,15],9))

@@ -4,178 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amer Hallaq</title>
-    <style>
-
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        body {
-            font-family:'Poppins', sans-serif;
-            color: black;
-            background-color: white;
-        }
-
-        .buttons, .main-section, nav ul {
-
-            margin-left: 15%;
-            margin-right: 15%;
-        }
-
-        nav {
-
-            width: 100%;
-          
-        }
-
-        nav img {
-
-            width: 1.5vw;
-            height: 1.5vw;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            list-style-type: none;
-            font-size: 1.2vw;
-            margin-top: 4%;
-            margin-bottom: 8%;
-        }
-
-        nav li {
-
-            margin-left: 6%;
-
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .home a, #title {
-            color: #D1884F;
-        }
-
-        .home, .person, .phone {
-            display: flex;
-            align-items: end;
-            
-        }
-
-        .welcome, .introduction a {
-
-            color: #3BBADB;
-        }
-
-        .bio {
-            color: #008AAA;
-        }
-
-
-        .main-section {
-
-            display: flex;
-            align-items: top;
-            justify-content: space-between;
-                
-        }
-
-        .content h1,h3,p {
-
-            padding-bottom: 8%;
-            
-        }
-
-        .content h1 {
-            font-size: 2.7vw;
-        }
-
-        .content p {
-
-            font-size: 1.2vw;
-        }
-
-        .content h3 {
-
-        font-size: 1.5vw;
-        }
-
-        .photo img {
-            width: 25vw;
-            height: 20vw;
-            border-radius: 0 0 0 50%;
-            box-shadow: -1.5vw 0.7vw 0vw -0.7vw #3BBADB ;
-    
-        }
-
-        .hire-btn {
-            color: white;
-            background-color:#008AAA;
-            border: none;
-            padding: .6033vw .6vw;
-            margin-right: 1.5vw;
-            box-shadow:  0px .2vw .3vw 0vw #8acbdb ;
-            
-        }
-
-        .project-btn {
-            color: #008AAA;
-            background-color:white;
-            border: .1em solid #008AAA;
-            padding: .5vw .8vw;
-            box-shadow:  0px .05vw .3vw 0vw #8acbdb ;
-            
-        }
-
-        .project-btn, .hire-btn {
-
-            font-size: 1.5vw;
-            border-radius: .3vw;
-            cursor: pointer;
-        }
-
-        .introduction {
-
-            width:90%;
-        }
-
-       
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <nav class="main-nav">
-        <ul>
-            <li class="home"><img src="home.png" alt="home"><a href="#">&nbsp&nbsp Home</a></li>
-            <li class="person"><img src="person.png" alt="person"><a href="#">&nbsp&nbsp About me</a></li>
-            <li class="phone"><img src="phone.png" alt="phone"><a href="#">&nbsp&nbsp Contact me</a></li>
-        </ul>
-        
-    </nav>
-    <article>
-        <section class="main-section">
-            <main class="content">
+    <div class="container">
+        <nav class="main-nav dropdown">
+            <ul class="dropdown-content">
+                <li class="home"><img src="home.png" alt="home"><a href="#">&nbsp&nbsp Home</a></li>
+                <li class="person"><img src="person.png" alt="person"><a href="#">&nbsp&nbsp About me</a></li>
+                <li class="phone"><img src="phone.png" alt="phone"><a href="#">&nbsp&nbsp Contact me</a></li>
+            </ul>
+        </nav>
+        <main class="main-section">
+            <section class="content">
                 <h3 class="welcome">Welcome to my site</h3>
-                <h1 class="bio">Hi, I'm Amer, a <br>Full Stack <span id="title">Developer.</span></h1>
-                <p class="introduction">I used to be a Mechanical Design Engineer, my passion for coding
+                <h1 class="header">Hi, I'm Amer, a <br>Full Stack <span id="title">Developer.</span></h1>
+                <p class="bio">I used to be a Mechanical Design Engineer, my passion for coding
                 inspires me to integrate between engineering experience and coding skills
                 to make engineering looks better.<a href="#">See more..</a>
                 </p>
-            </main>
+            </section>
             <figure class="photo">
                 <img src="amerhallaq.jpg" alt="photo">
             </figure>
-        </section>
-        
-        <summary class="buttons">
+        </main>
+        <div class="buttons">
             <button class="hire-btn">Hire me!</button>
             <button class="project-btn">See My Project</button>
-        </summary>
-            
-    </article>
+        </div>
+        
+        
+    </div>
+    
 </body>
 </html>
